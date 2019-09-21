@@ -10,6 +10,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\RadioInactive\Application.h" />
+    <ClInclude Include="Source\RadioInactive\Core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\RadioInactive\Application.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{78F99E55-88DE-4B16-80EF-FC847BB970E6}</ProjectGuid>
@@ -76,8 +83,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
