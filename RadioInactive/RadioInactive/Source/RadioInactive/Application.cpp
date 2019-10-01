@@ -15,4 +15,6 @@ namespace RadioInactive
 	{
 		while (true);
 	}
+
+	Application* CreateApplication();
 }
