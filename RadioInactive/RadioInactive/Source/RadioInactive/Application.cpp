@@ -16,5 +16,6 @@ namespace RadioInactive
 		while (true);
 	}
 
+	// To be defined in CLIENT.
 	Application* CreateApplication();
 }
