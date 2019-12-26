@@ -11,7 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Core.h" />
+    <ClInclude Include="Source\RadioInactive\Application.h" />
+    <ClInclude Include="Source\RadioInactive\Core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\RadioInactive\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
