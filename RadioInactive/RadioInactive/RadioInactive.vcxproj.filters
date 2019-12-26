@@ -21,6 +21,9 @@
     <ClInclude Include="Source\RadioInactive\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\RadioInactive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\RadioInactive\Application.cpp">

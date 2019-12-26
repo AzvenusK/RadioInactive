@@ -2,9 +2,9 @@
 
 #ifdef RI_PLATFORM_WINDOWS
 	#ifdef RI_BUILD_DLL
-		#define __declspec(dllexport)
+		#define RI_API __declspec(dllexport)
 	#else 
-		#define __declspec(dllimport)
+		#define RI_API __declspec(dllimport)
 	#endif
 #else
 	#error Hazel only supports Windows!
