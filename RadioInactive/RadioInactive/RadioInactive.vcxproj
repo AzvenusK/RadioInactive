@@ -14,6 +14,7 @@
     <ClInclude Include="Source\RadioInactive.h" />
     <ClInclude Include="Source\RadioInactive\Application.h" />
     <ClInclude Include="Source\RadioInactive\Core.h" />
+    <ClInclude Include="Source\RadioInactive\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\RadioInactive\Application.cpp" />

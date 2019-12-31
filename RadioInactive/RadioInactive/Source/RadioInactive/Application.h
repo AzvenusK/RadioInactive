@@ -12,4 +12,7 @@ namespace RadioInactive
 		void Run();
 	};
 
+	//To be defined in CLIENT
+	Application* CreateApplication();
+
 }

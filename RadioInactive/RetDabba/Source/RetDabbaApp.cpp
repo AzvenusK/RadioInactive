@@ -14,9 +14,7 @@ public:
 	}
 };
 
-int main()
+RadioInactive::Application* RadioInactive::CreateApplication()
 {
-	RetDabba* retDabba = new RetDabba();
-	retDabba->Run();
-	delete retDabba;
+	return new RetDabba();
 }
