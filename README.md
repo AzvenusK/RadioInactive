@@ -1,5 +1,6 @@
-
+﻿
 RadioInactive : The Game Engine
+
 
 What is game engine?
 If we search this question on the internet as we get big names like Unity & Unreal, which are like a set of tools which make like a one big tool that helps to develop games, or a platform for making interactive applications. If we look at the big picture what the game engine does is that it takes one kind of data and transforms it into another type. Now the file that the game engine takes as input and gives out as output is an important part of understanding game engines. 
@@ -9,20 +10,20 @@ So what a game engine actually does is that it takes these assets provided by th
 The Design
 The first thing to note and understand while thinking of the design of your game engine is to understand that we have to make a lot of compromises you cannot make something like Unity, Unreal Engine or something similar on your own those things take a whole lot of time and workforce.
 Now the following are some of the points that we are going to consider as the major deciding factors of our game engine design:
-a)	Entry Point: When we launch our game from this game engine which controls go to which parts of the game engine?
-b)	Application Layer: The components of the game engine that deals with the game build something like the function that keeps a particular code in the loop for each frame, all these lies in this part.
-c)	Window Layer: The window is going to be the target of all of our work of game engine so creation of this part is quite important.
-d)	Input: The input files / assets for our game engine. 
-e)	Events: The events of addition of these assets to game engine, their processing and handling of how these inputs are being displayed in the output file.
-f)	Renderer: It handles the actual graphics on the screen. It goes through the list of things that has been added to scene and then draw them in the scene.
-g)	Render API Abstraction: This abstraction is required not only for multiple platform support, but also will help when we want to add another API where it helps in to smoothly integrate it with the engine and not having to write the whole piece again.
-h)	Debugging System: This layer of design along with overseeing the actual debugging of the system will also categorize each design element and their function in a way that the user can see it and know what is going on in each one of them while he is working on any project in the game engine.
-i)	Scripting language: Setting up the higher level languages than C++ which gives more performance in less LOCs (Line of Codes) like C# or Python.
-j)	Memory Systems: Memory allocation and memory tracking is also an important part of our system as the resource management and CPU usage in memory allocation for programs is a big part of performance measure that we will need to have and that too efficient.
-k)	Entity-Component System(ECS): This layer is about the synchronization of different components like scripts, or physics and their integration with the different Entities like Game Objects.
-l)	Physics: The actual physics components that we will have in our Game Engine and their behavior.
-m)	File I/O and Virtual File Systems (VFS): How the system will interpret and store our asset in the explorer of our Operating System.
-n)	Build System: The conversion system of different assets that a content creator adds in the engine from the previous file type to our usable file type so that we don’t have to waste precious processing power and time to do that at runtime, this also deal with building he final project into executable file format of the system.
+a) Entry Point: When we launch our game from this game engine which controls go to which parts of the game engine?
+b) Application Layer: The components of the game engine that deals with the game build something like the function that keeps a particular code in the loop for each frame, all these lies in this part.
+c) Window Layer: The window is going to be the target of all of our work of game engine so creation of this part is quite important.
+d) Input: The input files / assets for our game engine. 
+e) Events: The events of addition of these assets to game engine, their processing and handling of how these inputs are being displayed in the output file.
+f) Renderer: It handles the actual graphics on the screen. It goes through the list of things that has been added to scene and then draw them in the scene.
+g) Render API Abstraction: This abstraction is required not only for multiple platform support, but also will help when we want to add another API where it helps in to smoothly integrate it with the engine and not having to write the whole piece again.
+h) Debugging System: This layer of design along with overseeing the actual debugging of the system will also categorize each design element and their function in a way that the user can see it and know what is going on in each one of them while he is working on any project in the game engine.
+i) Scripting language: Setting up the higher level languages than C++ which gives more performance in less LOCs (Line of Codes) like C# or Python.
+j) Memory Systems: Memory allocation and memory tracking is also an important part of our system as the resource management and CPU usage in memory allocation for programs is a big part of performance measure that we will need to have and that too efficient.
+k) Entity-Component System(ECS): This layer is about the synchronization of different components like scripts, or physics and their integration with the different Entities like Game Objects.
+l) Physics: The actual physics components that we will have in our Game Engine and their behavior.
+m) File I/O and Virtual File Systems (VFS): How the system will interpret and store our asset in the explorer of our Operating System.
+n) Build System: The conversion system of different assets that a content creator adds in the engine from the previous file type to our usable file type so that we don’t have to waste precious processing power and time to do that at runtime, this also deal with building he final project into executable file format of the system.
    
 The Setup
 The repository is on my github account visit https://github.com/AzvenusK/RadioInactive
@@ -35,7 +36,7 @@ New project created in the solutions folder by right clicking on it and adding a
 RetDabba was set as the main startup project and then the solution file was opened with WordPad and the RetDabba was shifted on top of the RadioInactive project.
 Then the RadioInactive was added as a reference to the RetDabba.
 Also, a lib file would be generated for the dll file which would actually hold all the libraries linked to the engine.
-•	Test
+• Test
 {
 Now we will deactivate show all files options in the solution explorer for both the project files.
 Next we add a folder to both of them saying named ‘Source’ containing all the source files.
@@ -63,3 +64,4 @@ We can make it say something like ‘Activated RadioInactive!’ through printf 
 Logging
 We want our engine to tell us when there is an error or when something is built correctly for this, we need a logger where we are informed of the processes being performed by the engine. In simple terms a logger is something that tells the user about the status of the processes in the game engine as well as the game engine itself. But also, instead of just telling us about where the error is coming from it must also tell us about the severity of that error message. 
 For the logging process we will be using a library spd log from the github link https://github.com/gabime/spdlog because the categorization of this library is really good. Also the arguments are C# style that are quite systematic and will help us use it more efficiently. 
+ 
