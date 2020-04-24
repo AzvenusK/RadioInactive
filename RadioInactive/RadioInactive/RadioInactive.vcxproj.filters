@@ -27,9 +27,15 @@
     <ClInclude Include="Source\RadioInactive\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\RadioInactive\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\RadioInactive\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RadioInactive\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
