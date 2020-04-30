@@ -30,12 +30,17 @@ project "RadioInactive"
 	}
 
 	filter "system:windows"
-	cppdialect "C++17"
-	staticruntime "On"
-	systemversion "10.0 (latest installed version)"
+		cppdialect "C++17"
+		staticruntime "On"
+		systemversion "10.0.18362.0"
 
-	defines
-	{
-		"RI_PLATFORM_WINDOWS",
-		"RI_BUILD_DLL"
-	}
+		defines
+		{
+			"RI_PLATFORM_WINDOWS",
+			"RI_BUILD_DLL"
+		}
+
+		postbuildcomands
+		{
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/RetDabba")
+		}
