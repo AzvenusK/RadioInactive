@@ -24,7 +24,7 @@ project "RadioInactive"
 		"%{prj.name}/Source/**.cpp"
 	}
 
-	include
+	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include"
 	}
@@ -40,7 +40,7 @@ project "RadioInactive"
 			"RI_BUILD_DLL"
 		}
 
-		postbuildcomands
+		postbuildcommands
 		{
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/RetDabba")
 		}
@@ -71,13 +71,12 @@ project "RetDabba"
 		"%{prj.name}/Source/**.h",
 		"%{prj.name}/Source/**.cpp"
 	}
-
-	include
+	
+	includedirs
 	{
 		"%{prj.name}/vendor/spdlog/include"
-		"RadioInactive/Source"
 	}
-
+	
 	links
 	{
 		"RadioInactive"
