@@ -20,8 +20,8 @@ project "RadioInactive"
 
 	files
 	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/Source/**.h",
+		"%{prj.name}/Source/**.cpp"
 	}
 
 	include
@@ -44,3 +44,63 @@ project "RadioInactive"
 		{
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/RetDabba")
 		}
+
+	filter "configurations:Debug"
+		defines "RI_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "RI_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "RI_DIST"
+		optimize "On"
+
+
+project "RetDabba"
+	location "RetDabba"
+	kind "ConsoleApp"
+	language "C++"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	files
+	{
+		"%{prj.name}/Source/**.h",
+		"%{prj.name}/Source/**.cpp"
+	}
+
+	include
+	{
+		"%{prj.name}/vendor/spdlog/include"
+		"RadioInactive/Source"
+	}
+
+	links
+	{
+		"RadioInactive"
+	}
+
+	filter "system:windows"
+		cppdialect "C++17"
+		staticruntime "On"
+		systemversion "10.0.18362.0"
+
+		defines
+		{
+			"RI_PLATFORM_WINDOWS"
+		}
+
+	filter "configurations:Debug"
+		defines "RI_DEBUG"
+		symbols "On"
+
+	filter "configurations:Release"
+		defines "RI_RELEASE"
+		optimize "On"
+
+	filter "configurations:Dist"
+		defines "RI_DIST"
+		optimize "On"
