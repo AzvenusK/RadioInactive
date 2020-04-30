@@ -74,9 +74,10 @@ project "RetDabba"
 	
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"RadioInactive/vendor/spdlog/include",
+		"RadioInactive/Source"
 	}
-	
+
 	links
 	{
 		"RadioInactive"
