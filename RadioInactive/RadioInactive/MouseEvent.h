@@ -30,4 +30,15 @@ namespace RadioInactive
 		EventCategoryMouse			= BIT(3),
 		EventCategoryMouseButton	= BIT(4)
 	};
+
+#define EVENT_CLASS_TYPE(type)		static	EventType	GetStsaticType()					{return EvnetType::##type;}\
+									virtual EventType	GetEventType()		const override	{return GetStaticType();}\
+									virtual	const char*	GetName()			const override	{return #type;}
+
+#define EVENT_CATEGORY(CATEGORY)	virtual	int			GetCategoryFlags()	const override	{return category;}
+
+	class RI_API Event
+	{
+
+	};
 }
