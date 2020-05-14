@@ -143,7 +143,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ApplicationEvent.h.h" />
+    <ClInclude Include="ApplicationEvent.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="KeyEvent.h" />
     <ClInclude Include="MouseEvent.h" />

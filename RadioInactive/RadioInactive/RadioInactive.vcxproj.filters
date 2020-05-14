@@ -22,9 +22,6 @@
     <ClInclude Include="Source\RadioInactive\Log.h">
       <Filter>RadioInactive</Filter>
     </ClInclude>
-    <ClInclude Include="ApplicationEvent.h.h">
-      <Filter>RadioInactive\Events</Filter>
-    </ClInclude>
     <ClInclude Include="Event.h">
       <Filter>RadioInactive\Events</Filter>
     </ClInclude>
@@ -32,6 +29,9 @@
       <Filter>RadioInactive\Events</Filter>
     </ClInclude>
     <ClInclude Include="MouseEvent.h">
+      <Filter>RadioInactive\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationEvent.h">
       <Filter>RadioInactive\Events</Filter>
     </ClInclude>
   </ItemGroup>
