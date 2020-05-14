@@ -53,6 +53,18 @@ namespace RadioInactive
 		}
 	protected:
 		bool m_Handled = false;
-	
+	};
+
+	class EventDispatcher
+	{
+		template<typename T>
+		using EventFn = std::function<bool(T&)>
+	public:
+		EventDispatcher(Event& event)
+			:m_Event(event)
+		{
+		}
+
+
 	};
 }
