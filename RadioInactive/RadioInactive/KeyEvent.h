@@ -34,10 +34,6 @@ namespace RadioInactive
 			return ss.str();
 		}
 
-		static	EventType	GetStsaticType() { return EventType::KeyPressed; }\
-		virtual EventType	GetEventType()		const override	{return GetStaticType();}\
-		virtual	const char*	GetName()			const override	{return "KeyPressed";}
-
 		EVENT_CLASS_TYPE(KeyPressed)
 	private:
 		int m_RepeatCount;
@@ -56,6 +52,6 @@ namespace RadioInactive
 			return ss.str();
 		}
 
-
+		EVENT_CLASS_TYPE(KeyReleased)
 	};
 }
