@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 	RI_INFO("Progress {0}%",a);
 
 	
-	printf("Activated RadioInactive!");
+	printf("Activated RadioInactive! \n");
 	auto app = RadioInactive::CreateApplication();
 	app->Run();
 	delete app;
