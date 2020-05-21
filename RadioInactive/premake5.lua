@@ -26,7 +26,7 @@ project "RadioInactive"
 
 	includedirs
 	{
-		"%{prj.name}/Source"
+		"%{prj.name}/Source",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
