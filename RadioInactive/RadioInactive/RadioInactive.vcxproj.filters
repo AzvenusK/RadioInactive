@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\RIPCH.h" />
     <ClInclude Include="Source\RadioInactive.h" />
     <ClInclude Include="Source\RadioInactive\Application.h">
       <Filter>RadioInactive</Filter>
@@ -36,6 +37,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\RIPCH.cpp" />
     <ClCompile Include="Source\RadioInactive\Application.cpp">
       <Filter>RadioInactive</Filter>
     </ClCompile>

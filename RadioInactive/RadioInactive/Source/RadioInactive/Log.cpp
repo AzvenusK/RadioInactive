@@ -1,3 +1,4 @@
+#include "RIPCH.h"
 #include "Log.h"
 
 namespace RadioInactive

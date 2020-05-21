@@ -18,6 +18,9 @@ project "RadioInactive"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "RIPCH.h"
+	pchsource "RadioInactive/Source/RIPCH.cpp"
+
 	files
 	{
 		"%{prj.name}/Source/**.h",

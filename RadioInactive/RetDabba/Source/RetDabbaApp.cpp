@@ -1,4 +1,6 @@
+#include "RIPCH.h"
 #include <RadioInactive.h>
+
 
 class RetDabba : public RadioInactive::Application
 {
