@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RI_PLATFORM_WINDOWS;RI_BUILD_DLL;RI_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Source;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -99,7 +99,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RI_PLATFORM_WINDOWS;RI_BUILD_DLL;RI_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Source;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -123,7 +123,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RI_PLATFORM_WINDOWS;RI_BUILD_DLL;RI_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Source;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -143,14 +143,14 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ApplicationEvent.h" />
-    <ClInclude Include="Event.h" />
-    <ClInclude Include="KeyEvent.h" />
-    <ClInclude Include="MouseEvent.h" />
     <ClInclude Include="Source\RadioInactive.h" />
     <ClInclude Include="Source\RadioInactive\Application.h" />
     <ClInclude Include="Source\RadioInactive\Core.h" />
     <ClInclude Include="Source\RadioInactive\EntryPoint.h" />
+    <ClInclude Include="Source\RadioInactive\Events\ApplicationEvent.h" />
+    <ClInclude Include="Source\RadioInactive\Events\Event.h" />
+    <ClInclude Include="Source\RadioInactive\Events\KeyEvent.h" />
+    <ClInclude Include="Source\RadioInactive\Events\MouseEvent.h" />
     <ClInclude Include="Source\RadioInactive\Log.h" />
   </ItemGroup>
   <ItemGroup>

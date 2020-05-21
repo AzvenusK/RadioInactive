@@ -5,7 +5,7 @@
       <UniqueIdentifier>{C72DF503-33EE-703A-FC28-BAB768A8B516}</UniqueIdentifier>
     </Filter>
     <Filter Include="RadioInactive\Events">
-      <UniqueIdentifier>{f6b5943c-8ea5-44cc-b3e3-6bb714a9665e}</UniqueIdentifier>
+      <UniqueIdentifier>{CBB36263-B742-EC2C-6061-00284CCFFCD2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,20 +19,20 @@
     <ClInclude Include="Source\RadioInactive\EntryPoint.h">
       <Filter>RadioInactive</Filter>
     </ClInclude>
+    <ClInclude Include="Source\RadioInactive\Events\ApplicationEvent.h">
+      <Filter>RadioInactive\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RadioInactive\Events\Event.h">
+      <Filter>RadioInactive\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RadioInactive\Events\KeyEvent.h">
+      <Filter>RadioInactive\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\RadioInactive\Events\MouseEvent.h">
+      <Filter>RadioInactive\Events</Filter>
+    </ClInclude>
     <ClInclude Include="Source\RadioInactive\Log.h">
       <Filter>RadioInactive</Filter>
-    </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>RadioInactive\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>RadioInactive\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>RadioInactive\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="ApplicationEvent.h">
-      <Filter>RadioInactive\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
