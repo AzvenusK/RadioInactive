@@ -35,6 +35,9 @@
     <ClInclude Include="Source\RadioInactive\Log.h">
       <Filter>RadioInactive</Filter>
     </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>RadioInactive</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\RIPCH.cpp" />
