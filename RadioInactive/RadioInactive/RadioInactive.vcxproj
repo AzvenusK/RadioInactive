@@ -149,6 +149,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="Source\RIPCH.h" />
     <ClInclude Include="Source\RadioInactive.h" />
     <ClInclude Include="Source\RadioInactive\Application.h" />
@@ -159,9 +160,10 @@
     <ClInclude Include="Source\RadioInactive\Events\KeyEvent.h" />
     <ClInclude Include="Source\RadioInactive\Events\MouseEvent.h" />
     <ClInclude Include="Source\RadioInactive\Log.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Source\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="Source\RIPCH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
