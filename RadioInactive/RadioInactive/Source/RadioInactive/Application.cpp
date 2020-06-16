@@ -3,6 +3,8 @@
 #include "Events/ApplicationEvent.h"
 #include "Log.h"
 
+#include "include/GLFW/glfw3.h"
+
 namespace RadioInactive
 {
 	Application::Application()
@@ -30,6 +32,8 @@ namespace RadioInactive
 
 		while (m_Running)
 		{
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT); 
 			m_Window->OnUpdate();
 		}
 	}
