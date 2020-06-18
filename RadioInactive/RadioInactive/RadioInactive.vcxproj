@@ -150,6 +150,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Source\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="Source\RadioInactive\Layer.h" />
+    <ClInclude Include="Source\RadioInactive\LayerStack.h" />
     <ClInclude Include="Source\RIPCH.h" />
     <ClInclude Include="Source\RadioInactive.h" />
     <ClInclude Include="Source\RadioInactive\Application.h" />
@@ -164,6 +166,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="Source\RadioInactive\Layer.cpp" />
+    <ClCompile Include="Source\RadioInactive\LayerStack.cpp" />
     <ClCompile Include="Source\RIPCH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

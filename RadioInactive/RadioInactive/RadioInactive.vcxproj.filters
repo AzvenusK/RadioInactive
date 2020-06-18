@@ -45,6 +45,8 @@
       <Filter>RadioInactive</Filter>
     </ClInclude>
     <ClInclude Include="Source\Window.h" />
+    <ClInclude Include="Source\RadioInactive\Layer.h" />
+    <ClInclude Include="Source\RadioInactive\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Platform\Windows\WindowsWindow.cpp">
@@ -57,5 +59,7 @@
     <ClCompile Include="Source\RadioInactive\Log.cpp">
       <Filter>RadioInactive</Filter>
     </ClCompile>
+    <ClCompile Include="Source\RadioInactive\Layer.cpp" />
+    <ClCompile Include="Source\RadioInactive\LayerStack.cpp" />
   </ItemGroup>
 </Project>
