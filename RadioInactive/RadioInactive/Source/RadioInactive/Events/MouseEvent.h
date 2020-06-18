@@ -68,6 +68,7 @@ namespace RadioInactive
 
 	class RI_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
+	public:
 		MouseButtonPressedEvent(int button)
 			: MouseButtonEvent(button) {}
 
@@ -83,6 +84,7 @@ namespace RadioInactive
 
 	class RI_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
+	public:
 		MouseButtonReleasedEvent(int button)
 			: MouseButtonEvent(button) {}
 

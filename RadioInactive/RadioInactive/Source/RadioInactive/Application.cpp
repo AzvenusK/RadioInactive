@@ -1,6 +1,5 @@
 #include "RIPCH.h"
 #include "Application.h"
-#include "Events/ApplicationEvent.h"
 #include "Log.h"
 
 #include "include/GLFW/glfw3.h"
@@ -22,7 +21,10 @@ namespace RadioInactive
 
 	void Application::OnEvent(Event& e)
 	{
-		RI_CORE_INFO("{0}", e);
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+
+		RI_CORE_TRACE("{0}", e);
 	}
 
 	void Application::Run()
@@ -44,5 +46,11 @@ namespace RadioInactive
 			glClear(GL_COLOR_BUFFER_BIT); 
 			m_Window->OnUpdate();
 		}
+	}
+
+	bool Application::OnWindowClose(WindowCloseEvent& e)
+	{
+		m_Running = false;
+		return true;
 	}
 }
